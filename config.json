@@ -1,4 +1,4 @@
 {
   "prefix": "/",
-  "token": ${{ secrets.BOT_TOKEN }}
+  "token": process.env.BOT_TOKEN
 }
