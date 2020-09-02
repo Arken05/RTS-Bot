@@ -14,8 +14,8 @@ client.on('ready', () => {
 
 client.on('message', message => {
 
-    if command === "ping") {
-     message.channel.send("pong");
+    if (message.content === "ping") {
+     message.reply("pong");
     }
 
 });
