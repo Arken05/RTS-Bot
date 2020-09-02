@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 
+const config = require('./config.json')
 const client = new Discord.Client();
 
  
@@ -24,4 +25,4 @@ client.on('message', message => {
 
 // THIS  MUST  BE  THIS  WAY
 
-client.login(process.env.BOT_TOKEN); //BOT_TOKEN is the Client Secret
+client.login(config.token); //BOT_TOKEN is the Client Secret
