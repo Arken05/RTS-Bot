@@ -1,4 +1,4 @@
 {
   "prefix": "/",
-  "token": (secret.BOT_TOKEN)
+  "token": (secrets.BOT_TOKEN)
 }
