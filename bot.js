@@ -7,7 +7,7 @@ const client = new Discord.Client();
 
 client.once('ready', () => {
 
-    console.log('All is good');
+    console.log('All is good.');
 
 });
 
@@ -15,7 +15,7 @@ client.once('ready', () => {
 
 client.on('message', message => {
 
-    if (message.content === "${prefix}ping") {
+    if (message.content === `${prefix}ping`) {
      message.channel.send("pong");
     }
 
