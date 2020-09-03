@@ -18,7 +18,9 @@ client.on('message', message => {
     if (message.content === `${prefix}ping`) {
      message.channel.send("pong");
     }
-
+    else if (message.content === `${prefix}server`) {
+     message.channel.send(`Server Name: ${message.guild.name}\nTotal Members: ${message.guild.memberCount}`
+                          }
 });
 
  
