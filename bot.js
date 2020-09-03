@@ -29,8 +29,8 @@ client.on('message', message => {
 	 client.commands.get('ping').execute(message, args);
 	}
     	if (command === 'server') {
-	   message.channel.send(`Server Name: ${message.guild.name}\nTotal Members: ${message.guild.memberCount}`)
-				  }
+	   client.commands.get('server').execute(message, args);
+	}
 	else if (command === 'kick') {
 	     if (!message.mentions.users.size) {
 		      return message.reply('you need to tag a user in order to kick them!');
