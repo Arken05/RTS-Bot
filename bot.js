@@ -20,25 +20,25 @@ client.once('ready', () => {
 
 
 client.on('message', message => {
-if (!message.content.startsWith(prefix) || message.author.bot) return;
+	if (!message.content.startsWith(prefix) || message.author.bot) return;
 
-const args = message.content.slice(prefix.length).trim().split(' ');
-const command = args.shift().toLowerCase();
- 
-    if (command === 'ping') {
-     message.channel.send("pong");
-    }
-    else if (command === 'server') {
-     message.channel.send(`Server Name: ${message.guild.name}\nTotal Members: ${message.guild.memberCount}`)
-                          }
-    else if (command === 'kick') {
-     if (!message.mentions.users.size) {
-	      return message.reply('you need to tag a user in order to kick them!');
-     }
-     const taggedUser = message.mentions.users.first();
-     
-     message.channel.send(`You wanted to kick: ${taggedUser.username}`);
-    }
+	const args = message.content.slice(prefix.length).trim().split(' ');
+	const command = args.shift().toLowerCase();
+
+	if (command === 'ping') {
+	 client.commands.get('ping').execute(message, args);
+	}
+    	if (command === 'server') {
+	   message.channel.send(`Server Name: ${message.guild.name}\nTotal Members: ${message.guild.memberCount}`)
+				  }
+	else if (command === 'kick') {
+	     if (!message.mentions.users.size) {
+		      return message.reply('you need to tag a user in order to kick them!');
+	     }
+	     const taggedUser = message.mentions.users.first();
+
+	     message.channel.send(`You wanted to kick: ${taggedUser.username}`);
+	    }
 });
 
  
