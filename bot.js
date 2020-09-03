@@ -22,7 +22,7 @@ const command = args.shift().toLowerCase();
     if (command === 'ping') {
      message.channel.send("pong");
     }
-    else if (message.content === `${prefix}server`) {
+    else if (command === 'server') {
      message.channel.send(`Server Name: ${message.guild.name}\nTotal Members: ${message.guild.memberCount}`)
                           }
 });
