@@ -25,6 +25,11 @@ const command = args.shift().toLowerCase();
     else if (command === 'server') {
      message.channel.send(`Server Name: ${message.guild.name}\nTotal Members: ${message.guild.memberCount}`)
                           }
+    else if (command === 'kick') {
+     const taggedUser = message.mentions.users.first();
+     
+     message.channel.send(`You wanted to kick: $taggedUser.username}`);
+    }
 });
 
  
