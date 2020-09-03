@@ -27,11 +27,9 @@ client.on('message', message => {
 
 	if (command === 'ping') {
 	 client.commands.get('ping').execute(message, args);
-	}
-    	else if (command === 'server') {
+	} else if (command === 'server') {
 	   client.commands.get('server').execute(message, args);
-	}
-	else if (command === 'kick') {
+	} else if (command === 'kick') {
 	  client.commands.get('kick').execute(message, args);
 	}
 });
