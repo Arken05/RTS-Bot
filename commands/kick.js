@@ -2,7 +2,7 @@ module.exports = {
     name: 'kick',
     description: 'to kick a user',
     execute(message, args) {
-        const member = message,mentions.members.first();
+        const member = message.mentions.members.first();
 	if(!member)
 		return message.reply("You need to mention a vaild user.");
 	if(!member.kickable)
