@@ -5,7 +5,7 @@ module.exports = {
         const member = message.mentions.members.first();
 	if(!member)
 		return message.reply("```//ban <member> [reason for ban] \n \nPinging/tagging a user is a required argument. A reason is optional.```");
-	if(!member.kickable)
+	if(!member.bannable)
 		return message.reply("I refuse.");
 	let reason = args.slice(1).join(' ');
     	if(!reason) reason = "No reason provided";
