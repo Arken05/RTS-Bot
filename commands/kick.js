@@ -4,15 +4,15 @@ module.exports = {
     execute(message, args) {
         const member = message.mentions.members.first();
 	if(!member)
-		return message.reply("You need to mention a vaild user.");
+		return message.reply(```"You need to mention a vaild user."```);
 	if(!member.kickable)
 		return message.reply("I refuse.");
 	let reason = args.slice(1).join(' ');
     	if(!reason) reason = "No reason provided";
     
     	member.kick(reason)
-      		.catch(error => message.reply(`Sorry ${message.author} I couldn't kick because of : ${error}`));
-    	message.reply(`${member.user.tag} has been kicked by ${message.author.tag} because: ${reason}`);
+      		.catch(error => message.channel.send(`Sorry ${message.author} I couldn't kick because of : ${error}`));
+    	message.channel.send(`${member.user.tag} has been kicked by ${message.author.tag} because: ${reason}`);
 
     }
 };
