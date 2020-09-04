@@ -10,6 +10,6 @@ module.exports = {
 
                 msg.guild.members.unban(id)
                         .catch(error => message.reply(`Sorry ${message.author} I couldn't unban because of : ${error}`));
-                message.reply(`Unbanned ${member.user.tag} because: ${reason}`);
+                message.reply(`Unbanned ${id} because: ${reason}`);
         }
 };
