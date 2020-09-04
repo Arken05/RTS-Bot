@@ -11,8 +11,8 @@ module.exports = {
     	if(!reason) reason = "No reason provided";
     
     	member.kick(reason)
-      		.catch(error => message.channel.send(`Sorry ${message.author} I couldn't kick because of : ${error}`));
-    	message.channel.send(`${member.user.tag} has been kicked by ${message.author.tag} because: ${reason}`);
+      		.catch(error => message.reply(`Sorry ${message.author} I couldn't kick because of : ${error}`));
+    	message.reply(`${member.user.tag} has been kicked by ${message.author.tag} because: ${reason}`);
 
     }
 };
