@@ -8,7 +8,7 @@ module.exports = {
                 let reason = args.slice(1).join(' ');
                 if(!reason) reason = "No reason provided";
 
-                id.unban(reason)
+                msg.guild.members.unban(id)
                         .catch(error => message.reply(`Sorry ${message.author} I couldn't unban because of : ${error}`));
                 message.reply(`Unbanned ${member.user.tag} because: ${reason}`);
         }
