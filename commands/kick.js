@@ -4,7 +4,7 @@ module.exports = {
     execute(message, args) {
         const member = message.mentions.members.first();
 	if(!member)
-		return message.reply("```You need to mention a vaild user.```");
+		return message.reply("```//kick <member> [reason] \n       ˄˄˄˄˄˄˄˄ \n member is a required argument that is missing```");
 	if(!member.kickable)
 		return message.reply("I refuse.");
 	let reason = args.slice(1).join(' ');
