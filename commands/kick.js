@@ -4,7 +4,7 @@ module.exports = {
     execute(message, args) {
         const member = message.mentions.members.first();
 	if(!member)
-		return message.reply("```//kick <member> [reason] \n       ˄˄˄˄˄˄˄˄ \n member is a required argument that is missing```");
+		return message.reply("```//kick <member> [reason for kick] \n Pinging/tagging a user is a required argument. A reason is optional.```");
 	if(!member.kickable)
 		return message.reply("I refuse.");
 	let reason = args.slice(1).join(' ');
