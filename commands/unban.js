@@ -13,3 +13,6 @@ module.exports.run = async(client, message, args) => {
     }
   
     message.guild.members.unban(ban.user.id).then((user) => {
+      }
+    })
+}
