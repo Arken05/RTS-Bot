@@ -2,7 +2,7 @@ const Discord = require(`discord.js`);
 
 module.exports.run = async(client, message, args) => {
   name: 'unban',
-  description: 'to unban a user',
+  description 'to unban a user',
     
   let User = args[0];
   let Reason = args.slice(1).join(` `);
