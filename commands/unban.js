@@ -4,24 +4,12 @@ module.exports.run = async(client, message, args) => {
   name: 'unban',
   description 'to unban a user',
     
-  let User = args[0];
-  let Reason = args.slice(1).join(` `);
-  if (!User) return message.reply(`Who are we unbanning?`);
-  if (!Reason) Reason = `Unbanned by ${message.author.tag}`
-
-  message.guild.fetchBans()
-  .then(bans => {
-  if (bans.some(u => User.includes(u.username))) {
-    let user = bans.find(user => user.username === User);
-
-    message.guild.unban(user.id, Reason);
+  async run({ message, args, server }, t) {
+    
+    let member = await message.guild.fetchBans()
+    let ban
+    ban = member.find(b => b.user.username === args[0]) || member.get(args[0].replace(/[!@<>]/g, "")) || member.find(b => b.user.tag === args[0])
+    if (!ban) return message.reply('no')
     }
-  else if (bans.some(u => User.includes(u.id))) {
-
-    message.guild.unban(User, Reason);
-    }
-  else {
-  return message.reply(`This person is not banned`);
-  }
-  }); 
-  }
+  
+    message.guild.members.unban(ban.user.id).then((user) => {
