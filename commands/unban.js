@@ -1,4 +1,4 @@
-module.exports.run = {
+module.exports = {
   name: 'unban',
   description: 'to unban a user',
   execute(message, args) {
