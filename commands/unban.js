@@ -6,7 +6,7 @@ module.exports = {
      message.reply("test")
      if(!id)
        return message.reply("```//unban <member> [reason for unban] \n \nUser ID is a required argument. A reason is optional.```")
-     let reasonn = args.slice(1).join(' ');
+     let reason = args.slice(1).join(' ');
      if(!reason) reason = "No reason provided";
     
      msg.guild.unban(${id}, reason)
