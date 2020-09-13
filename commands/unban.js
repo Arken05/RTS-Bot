@@ -7,6 +7,5 @@ module.exports = {
        return message.reply("```//unban <member> [reason for unban] \n \nPinging/tagging a user is a required argument. A reason is optional.```");
     guild.members.unban(id)
     message.reply("```unbanned, warning this may not be true```");
-    })
   }
 };
