@@ -8,6 +8,6 @@ module.exports = {
     let reason = args[1]
     if(!reason) reason = "No reason"
     message.guild.unban(id)
-    message.reply('Unbanned ${id} , because ${reason}');
+    message.reply(`Unbanned ${id} , because ${reason}`);
   }
 };
