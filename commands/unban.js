@@ -5,11 +5,7 @@ module.exports = {
     let userID = args[0]
       if(!userID)
         return message.reply("```//unban <member> [reason for unban] \n \nPinging/tagging a user is a required argument. A reason is optional.```");
-      message.guild.fetchBans().then(bans=> {
-      if(bans.size == 0) return 
-      let bUser = bans.find(b => b.user.id == userID)
-      if(!bUser) return
-      guild.members.unban(bUser.user)
+      guild.members.unban(userID)
       message.reply("```unbanned, warning this may not be true```");
       })
   }
