@@ -1,7 +1,7 @@
 module.exports = {
-  name: 'server',
-  description: 'server stats',
+  name: 'membercount',
+  description: 'displays current member count',
   execute(message, args) {
-    message.channel.send(`Server Name: ${message.guild.name}\nTotal Members: ${message.guild.memberCount}`);
+    message.channel.send(`Total Members: ${message.guild.memberCount}`);
   },
 };
