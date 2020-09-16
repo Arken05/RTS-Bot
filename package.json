@@ -16,7 +16,7 @@
 
   "dependencies": {
 
-    "discordjs": "12.1.0",
+    "discord.js": "12.1.0",
 
     "request": "2.81.0"
 
