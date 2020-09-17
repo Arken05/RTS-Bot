@@ -2,9 +2,9 @@ module.exports = {
     name: 'ban',
     description: 'to ban a user',
     execute(message, args) {
-        const member = message.mentions.members.first();
-	if(!message.author.hasPermission("BAN_MEMBERS") )
+        if(!member.hasPermission("BAN_MEMBERS") )
 		return message.reply("You don't have the permissions to do that");
+        const member = message.mentions.members.first();
 	if(!member)
 		return message.reply("```//ban <member> [reason for ban] \n \nPinging/tagging a user is a required argument. A reason is optional.```");
 	if(!member.bannable)
