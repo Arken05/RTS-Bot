@@ -3,8 +3,6 @@ module.exports = {
   description: 'to unban a user',
   execute(message, args) {
     let id = args[0]
-    if(!message.author.hasPermission("BAN_MEMBERS"))
-       return message.reply("no perms")
     if(!id)
        return message.reply("```//unban <member> [reason for unban] \n \nPinging/tagging a user is a required argument. A reason is optional.```");
     let reason = args[1]
