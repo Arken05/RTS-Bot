@@ -2,7 +2,7 @@ module.exports = {
     name: 'ban',
     description: 'to ban a user',
     execute(message, args) {
-        if(!member.hasPermission("BAN_MEMBERS") )
+        if(!message.member.hasPermission("BAN_MEMBERS") )
 		return message.reply("You don't have the permissions to do that");
         const member = message.mentions.members.first();
 	if(!member)
