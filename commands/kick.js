@@ -2,6 +2,10 @@ module.exports = {
     name: 'kick',
     description: 'to kick a user',
     execute(message, args) {
+
+        if(!message.member.hasPermission("KICK_MEMBERS") )
+		return message.reply("You don't have the permissions to do that");
+
         const member = message.mentions.members.first();
 	if(!member)
 		return message.reply("```//kick <member> [reason for kick] \n \nPinging/tagging a user is a required argument. A reason is optional.```");
