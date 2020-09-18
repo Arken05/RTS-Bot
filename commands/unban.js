@@ -3,8 +3,8 @@ module.exports = {
   description: 'to unban a user',
   execute(message, args) {
 
-    if(!message.member.hasPermission("BAN_MEMBERS") )
-       return message.reply("You don't have the permissions to do that");
+    //if(!message.member.hasPermission("BAN_MEMBERS") )
+       //return message.reply("You don't have the permissions to do that");
 
     let id = args[0]
     if(!id)
