@@ -13,6 +13,6 @@ module.exports = {
     if(!reason) reason = "no reason"
     message.guild.members.unban(id)
       .catch(error => message.reply(`Sorry ${message.author} I couldn't ban because of : ${error}`));
-    message.reply(`Unbanned: ${id} \nReason: ${reason}`);
+    message.reply(`\nUnbanned: ${id} \nReason: ${reason}`);
   }
 };
