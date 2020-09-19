@@ -7,11 +7,11 @@ module.exports = {
     let reason = args[1]
     if(!reason) reason = "no reason"
     let userID = args[0]
-      msg.guild.fetchBans().then(bans=> {
+      message.guild.fetchBans().then(bans=> {
       if(bans.size == 0) return 
       let bUser = bans.find(b => b.user.id == userID)
       if(!bUser) return
-      msg.guild.members.unban(bUser.user)
+      message.guild.members.unban(bUser.user)
       })
   }
 };
