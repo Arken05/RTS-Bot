@@ -6,13 +6,14 @@ module.exports = {
     //if(!message.member.hasPermission("BAN_MEMBERS") )
        //return message.reply("You don't have the permissions to do that");
 
-    let id = args[0]
-    if(!id)
        return message.reply("```//unban <member> [reason for unban] \n \nPinging/tagging a user is a required argument. A reason is optional.```");
     let reason = args[1]
     if(!reason) reason = "no reason"
-    message.guild.members.unban(id)
-      .catch(error => message.reply(`Sorry ${message.author} I couldn't ban because of : ${error}`));
-    message.reply(`\nUnbanned: ${id} \nReason: ${reason}`);
+    let userID = args[0]
+      msg.guild.fetchBans().then(bans=> {
+      if(bans.size == 0) return 
+      let bUser = bans.find(b => b.user.id == userID)
+      if(!bUser) return
+      msg.guild.members.unban(bUser.user)
   }
 };
