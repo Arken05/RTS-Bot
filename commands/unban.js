@@ -11,7 +11,7 @@ module.exports = {
        return message.reply("```//unban <member> [reason for unban] \n \nPinging/tagging a user is a required argument. A reason is optional.```");
     let reason = args[1]
     if(!reason) reason = "No reason"
-    message.guild.unban(id)
+    message.guild.members.unban(id)
     message.reply(`Unbanned ${id} , because ${reason}`);
   }
 };
