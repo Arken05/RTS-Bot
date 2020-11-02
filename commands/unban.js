@@ -11,10 +11,10 @@ module.exports = {
       return message.reply("Must ping a user.")
     message.guild.fetchBans().then(bans=> {
     if(bans.size == 0) return 
-    let bUser = bans.find(b => b.user.id == userID)
-    if(!bUser)
-      return message.reply("This user is not banned.")
-    message.guild.members.unban(bUser.user)
+    //let bUser = bans.find(b => b.user.id == userID)
+    //if()
+      //return message.reply("This user is not banned.")
+    message.guild.members.unban(userID)
     })
   }
 };
