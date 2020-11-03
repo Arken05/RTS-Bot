@@ -16,5 +16,5 @@ module.exports = {
       //return message.reply("This user is not banned.")
     message.guild.members.unban(userID)
     message.reply(`User ${userID} unbanned by ${message.author}. \nReason: ${reason}.);
-  }
+  },
 };
