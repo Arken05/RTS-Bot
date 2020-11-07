@@ -1,6 +1,6 @@
 module.exports = {
     name: 'ban',
-    description: 'to ban a user',
+    description: 'Ban a user',
     execute(message, args) {
         if(!message.member.hasPermission("BAN_MEMBERS") )
 		return message.reply("Requires permission: BAN MEMBERS");
