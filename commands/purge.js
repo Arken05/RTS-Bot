@@ -2,6 +2,8 @@ module.exports = {
 	name: 'purge',
 	description: 'Purge up to 99 messages.',
 	execute(message, args) {
+		if(!message.member.hasPermission("MANAGE_MESSAGES") )
+			return message.reply("Requires permission: MANAGE MEMBERS");
 		const amount = parseInt(args[0]) + 1;
 
 		if (isNaN(amount)) {
