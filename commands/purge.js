@@ -3,7 +3,7 @@ module.exports = {
 	description: 'Purge up to 99 messages.',
 	execute(message, args) {
 		if(!message.member.hasPermission("MANAGE_MESSAGES") )
-			return message.reply("Requires permission: MANAGE MEMBERS");
+			return message.reply("Requires permission: MANAGE MESSAGES");
 		const amount = parseInt(args[0]) + 1;
 
 		if (isNaN(amount)) {
