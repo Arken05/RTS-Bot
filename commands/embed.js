@@ -10,8 +10,8 @@ module.exports = {
     const embed = new Discord.MessageEmbed()
       .setColor('#a822f8')
       .setTitle('RULES')
-      .setDescription('Follow all the rules in order to maintain membership of the server: \n\
-° • .  Server Rules  . • ° \n\
+      .setDescription('Follow all the rules in order to maintain membership of the server. \n\
+Server Rules \n\
 \n\
 :wumpusdance: Please be respectful to everyone, do not target or harass others. \n\
 :wumpusdance: Use common sense. Not all rules are included here, please do not try to find loopholes. \n\
@@ -23,7 +23,7 @@ module.exports = {
 :wumpusdance: Keep swearing to a minimum. It is allowed but do not overdo it. \n\
 :wumpusdance: Spam is forbidden in all channels except #•⚓•spam.\n\
 \n\
-° • .  Advertising Rules  . • ° \n\
+Advertising Rules \n\
 \n\
 :weewoo:  Use a Permanent invite. \n\
 :weewoo:  Your server ad must include a description. \n\
