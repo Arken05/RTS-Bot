@@ -12,7 +12,7 @@ module.exports = {
       .setTitle('RULES')
       .setDescription('Follow all the rules in order to maintain membership of the server: ')
       .addFields(
-        {name: 'Server Rules', value: '1. Be respectful \n\
+        {name: '**Server Rules**', value: '1. Be respectful \n\
 2. Be nice' },
         {name: 'Advertising Rules', value: '1. Post in the correct channels \n\
 2. NO DM ADVERTISING' },
