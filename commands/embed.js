@@ -14,7 +14,6 @@ module.exports = {
       .addFields(
         {name: 'Server Rules', value: '1. Be respectful \n\
 2. Be nice' },
-        {name: '\u200b', value: '\u200b'},
         {name: 'Advertising Rules', value: '1. Post in the correct channels \n\
 2. NO DM ADVERTISING' },
       )
