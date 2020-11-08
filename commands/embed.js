@@ -17,7 +17,7 @@ module.exports = {
         {name: '\u200b', value: '\u200b'},
         {name: 'Advertising Rules', value: '1. Post in the correct channels \n\
 2. NO DM ADVERTISING' },
-      }
+      )
       .setFooter('')
     message.channel.send(embed);
   },
