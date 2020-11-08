@@ -8,9 +8,9 @@ module.exports = {
       return message.reply("admin only")
     
     const embed = new Discord.MessageEmbed()
-      .setColor('')
-      .setTitle('EMBED')
-      .setDescription('test')
+      .setColor('#a822f8')
+      .setTitle('RULES')
+      .setDescription('1. no mean')
       .setFooter('test')
     message.channel.send(embed);
   },
