@@ -9,7 +9,7 @@ module.exports = {
     
     const embed = new Discord.MessageEmbed()
       .setColor('#a822f8')
-      .setTitle('RULES')
+      .setTitle('**Rules**')
       .setDescription('Follow all the rules in order to maintain membership of the server: ')
       .addFields(
         {name: '__Server Rules__', value: ' • Be respectful \n\
