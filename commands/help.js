@@ -40,6 +40,7 @@ module.exports = {
 		    if (command.usage) data.push(`**Usage:** ${prefix}${command.name} ${command.usage}`);
 
 		    data.push(`**Cooldown:** ${command.cooldown || 3} second(s)`);
+		    data.push('\n');
 
 		    message.channel.send(data, { split: true });
 	},
