@@ -12,22 +12,7 @@ module.exports = {
       .setTitle('**Settlement Classification Act 2021**')
       .setDescription('All cities in the Federal Republic of Espaeria will now be subject to The Settlement Classification Act as detailed below. Each tier is graded upon its amount of residential buildings, services, institutions and attractions and can be re-assessed upon request')
       .addFields(
-        {name: '__Server Rules__', value: ' • Be respectful to all \n\
-• You must follow Discord ToS & Guidelines at all times.\n\
-• You may not copy a staff member`s name without explicit permission.\n\
-• Keep swearing to a mimimum. It is allowed, but do not overdo it.\n\
-• Respect Staff. They are here for your own good.\n\
-• Try to keep to English\n\
-• Use common sense. Not all rules are included here, do not attempt to find loopholes.\n\
-• No NSFW media is allowed including: videos, photos, links, emojis. This will result in severe moderation, you may be banned. Discussing NSFW topics may result in moderation.\n\
-• Spam is forbidden in all channels except #•⚓•spam.' },
-        {name: '__Advertising Rules__', value: ' • Advertise in the correct channels only.\n\
-• Your ad must contain a permanent invite.\n\
-• Your ad must contain a description. \n\
-• Your server must follow Discord ToS & Guidelines\n\
-• No NSFW servers may be advertised here.\n\
-• No Invite for Reward or giveaway servers may be advertised here.\n\
-• DM advertising will result in an immediate ban, please report this if you experience it.' },
+        {name: '__Classifications__', value: ' insert detail ' },
       )
       .setThumbnail('https://media.discordapp.net/attachments/753667854800519223/774995173435637790/20201101_204742.jpg?width=654&height=654')
       .setFooter('')
