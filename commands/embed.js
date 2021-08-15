@@ -22,7 +22,7 @@ Village
 • Centre point 
 
 Town
-• Large collection of houses
+• Large collection ofhouses
 • Some varying services
 • Local government building 
 • Some attractions 
