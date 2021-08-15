@@ -29,7 +29,7 @@ Town:
 • Established road network 
 
 City:
-• Large collection of houses
+• Large collectionof houses
 • Large amount of services 
 • Governmental institutions
 • Wide array of attractions
