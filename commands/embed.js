@@ -14,7 +14,7 @@ module.exports = {
       .addFields(
         {name: '__Classifications__', value: ' insert detail ' },
       )
-      .setThumbnail('https://media.discordapp.net/attachments/753667854800519223/774995173435637790/20201101_204742.jpg?width=654&height=654')
+      .setThumbnail('https://cdn.discordapp.com/attachments/876573593360818267/876577308805316638/image0.jpg')
       .setFooter('')
     message.channel.send(embed);
   },
