@@ -12,27 +12,27 @@ module.exports = {
       .setTitle('**Settlement Classification Act 2021**')
       .setDescription('All cities in the Federal Republic of Espaeria will now be subject to The Settlement Classification Act as detailed below. Each tier is graded upon its amount of residential buildings, services, institutions and attractions and can be re-assessed upon request.')
       .addFields(
-        {name: '__Classifications__', value: 'Hamlet
-• A small collection of houses
-• Little to no commercial services 
+        {name: '__Classifications__', value: 'Hamlet: \n\
+• A small collection of houses \n\
+• Little to no commercial services \n\
 
-Village
-• Small collection of houses
-• Some commercial services
-• Centre point 
+Village: \n\
+• Small collection of houses \n\
+• Some commercial services \n\
+• Centre point \n\
 
-Town
-• Large collection ofhouses
-• Some varying services
-• Local government building 
-• Some attractions 
-• Established road network 
+Town: \n\
+• Large collection of houses \n\
+• Some varying services \n\
+• Local government building \n\
+• Some attractions \n\
+• Established road network \n\
 
-City
-• Large collection of houses
-• Large amount of services 
-• Governmental institutions
-• Wide array of attractions
+City: \n\
+• Large collection of houses \n\
+• Large amount of services \n\
+• Governmental institutions \n\
+• Wide array of attractions \n\
 • Established road network' },
       )
       .setThumbnail('https://cdn.discordapp.com/attachments/876573593360818267/876577308805316638/image0.jpg')
