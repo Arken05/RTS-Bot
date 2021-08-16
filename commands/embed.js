@@ -12,11 +12,11 @@ module.exports = {
       .setTitle('**Settlement Classification Act 2021**')
       .setDescription('All cities in the Federal Republic of Espaeria will now be subject to The Settlement Classification Act as detailed below. Each tier is graded upon its amount of residential buildings, services, institutions and attractions and can be re-assessed upon request.')
       .addFields(
-        {name: '__Classifications__', value: 'Hamlet \n\
+        {name: '__Classifications__', value: ' Hamlet: \n\
 • A small collection of houses \n\
 • Little to no commercial services \n\
 
-Village \n\
+Village: \n\
 • Small collection of houses \n\
 • Some commercial services \n\
 • Centre point \n\
