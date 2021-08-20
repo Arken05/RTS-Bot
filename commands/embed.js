@@ -32,7 +32,7 @@ City: \n
 • Large collection of houses \n
 • Large amount of services \n
 • Governmental institutions \n
-• Wide array of attractions \n
+• Wide array of attraction \n
 • Established road network' },
       )
       .setThumbnail('https://cdn.discordapp.com/attachments/876573593360818267/876577308805316638/image0.jpg')
