@@ -17,19 +17,19 @@ module.exports = {
 • Little to no commercial services \n\
 \n\
 Village: \n\
-• Small collection of houses \n\
+• A small collection of houses \n\
 • Some commercial services \n\
 • Centre point \n\
 \n\
-Town: \n
-• Large collection of houses \n\
+Town: \n\
+• Large Collection of houses \n\
 • Some varying services \n\
 • Local government building \n\
 • Some attractions \n\
 • Established road network \n\
 \n\
 City: \n\
-• Large collection of houses \n\
+• Large Collection of houses \n\
 • Large amount of services \n\
 • Governmental institutions \n\
 • Wide array of attractions \n\
