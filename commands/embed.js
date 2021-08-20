@@ -9,6 +9,7 @@ module.exports = {
     
     const embed = new Discord.MessageEmbed()
       .setColor('#ffdd00')
+      .setTimestamp()
       .setTitle('**Settlement Classification Act 2021**')
       .setDescription('All cities in the Federal Republic of Espaeria will now be subject to The Settlement Classification Act as detailed below. Each tier is graded upon its amount of residential buildings, services, institutions and attractions and can be re-assessed upon request.')
       .addFields(
