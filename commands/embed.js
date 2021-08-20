@@ -14,25 +14,25 @@ module.exports = {
       .addFields(
         {name: '__Classifications__', value: ' Hamlet: \n
 • A small collection of houses \n
-• Little to no commercial services \n\
+• Little to no commercial services \n
 
-Village: \n\
-• Small collection of houses \n\
-• Some commercial services \n\
-• Centre point \n\
+Village: \n
+• Small collection of houses \n
+• Some commercial services \n
+• Centre point \n
 
-Town: \n\
-• Large collection of houses \n\
-• Some varying services \n\
-• Local government building \n\
-• Some attractions \n\
-• Established road network \n\
+Town: \n
+• Large collection of houses \n
+• Some varying services \n
+• Local government building \n
+• Some attractions \n
+• Established road network \n
 
-City: \n\
-• Large collection of houses \n\
-• Large amount of services \n\
-• Governmental institutions \n\
-• Wide array of attractions \n\
+City: \n
+• Large collection of houses \n
+• Large amount of services \n
+• Governmental institutions \n
+• Wide array of attractions \n
 • Established road network' },
       )
       .setThumbnail('https://cdn.discordapp.com/attachments/876573593360818267/876577308805316638/image0.jpg')
