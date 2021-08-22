@@ -19,6 +19,10 @@ client.once('ready', () => {
 
 
 
+client.on('messageUpdate', (oldMessage, newMessage) => {
+	newMessage.react('⚠️')
+});
+
 client.on('message', message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 
