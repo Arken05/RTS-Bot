@@ -11,8 +11,8 @@ for (const file of commandFiles) {
 	client.commands.set(command.name, command);
 }
 
-client.once('ready', () => {
-
+client.on('ready', () => {
+    client.user.setActivity('Builidng on the Espaerian Minecraft Server');
     console.log('we liveee boys');
 
 });
