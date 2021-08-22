@@ -20,7 +20,8 @@ client.once('ready', () => {
 
 
 client.on('messageUpdate', (oldMessage, newMessage) => {
-	if (newMessage.channel.id === '876212842171367505' || newMessage.channel.id === '879067440108167219' || newMessage.channel.id === '879067552419045376' || 
+	if (newMessage.channel.id === '876212842171367505' || newMessage.channel.id === '879067440108167219' 
+|| newMessage.channel.id === '879067552419045376' || 
 newMessage.channel.id === ' 879067584220262420' || newMessage.channel.id === '879067671075881020') { 	    
 		newMessage.react('⚠️')
 	}
