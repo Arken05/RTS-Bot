@@ -12,7 +12,7 @@ for (const file of commandFiles) {
 }
 
 client.on('ready', () => {
-    client.user.setActivity('Builidng on the Espaerian Minecraft Server');
+    client.user.setActivity('Minecraft on the Espaerian Realm', { type: 'PLAYING' });
     console.log('we liveee boys');
 
 });
